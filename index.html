@@ -1,30 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
-      integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o="
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="src/style/style.css" />
-    <title>Title</title>
-  </head>
-  <body>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-    <script src="dist/bundle.js"></script>
-  </body>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
+    integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="src/style/style.css" />
+  <title>Title</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="keys">
+      <div class="row">
+        <div class="col-sm">
+          <div class="key" data-key="65">
+            <kbd>A</kbd>
+            <span class="sound">clap</span>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="key" data-key="83">
+            <kbd>S</kbd>
+            <span class="sound">hihat</span>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="key" data-key="68">
+            <kbd>D</kbd>
+            <span class="sound">kick</span>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="key" data-key="70">
+            <kbd>F</kbd>
+            <span class="sound">openhat</span>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="key" data-key="71">
+            <kbd>G</kbd>
+            <span class="sound">boom</span>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="key" data-key="72">
+            <kbd>H</kbd>
+            <span class="sound">ride</span>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="key" data-key="74">
+            <kbd>J</kbd>
+            <span class="sound">snare</span>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="key" data-key="75">
+            <kbd>k</kbd>
+            <span class="sound">tom</span>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="key" data-key="76">
+            <kbd>L</kbd>
+            <span class="sound">tink</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <audio src="./src/sound/clap.wav" data-key="65"></audio>
+  <audio src="./src/sound/hihat.wav" data-key="83"></audio>
+  <audio src="./src/sound/kick.wav" data-key="68"></audio>
+  <audio src="./src/sound/openhat.wav" data-key="70"></audio>
+  <audio src="./src/sound/boom.wav" data-key="71"></audio>
+  <audio src="./src/sound/ride.wav" data-key="72"></audio>
+  <audio src="./src/sound/snare.wav" data-key="74"></audio>
+  <audio src="./src/sound/tom.wav" data-key="75"></audio>
+  <audio src="./src/sound/tink.wav" data-key="76"></audio>
+
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+  <script src="dist/bundle.js"></script>
+</body>
+
 </html>
